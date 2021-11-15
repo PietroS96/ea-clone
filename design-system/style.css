@@ -1,13 +1,34 @@
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+
 }
 body{
-    background-color: grey;
+    background-color: gainsboro;
     width: 100em;
     height: 100em;
 }
 
+/* Font Group*/
+.container-font-family{
+    display: flex;
+    justify-content: space-around;
+}
+.container-font-family-header {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.container-font-family-footer-condizioni {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.container-font-family-libreria-giochi {
+    font-family: Oswald;
+    font-size: 18px;
+}
+.container-font-family-note-legali{
+    font-family: Sen;
+    font-size: 16px;
+}
 /* Palette colori*/
 
 .palette{
