@@ -12,10 +12,6 @@
 
 
 
-
-
-
-
 /*Footer*/
 
 .banner-sub{
@@ -142,8 +138,9 @@
 }
 .social img{
     width: 30px;
-    margin-left: 10px;
+    margin-left: 12px;
     margin-top: 10px;
+    opacity: 0.8;
 }
 .container-footer-info > div > img{
     width: 64px;
