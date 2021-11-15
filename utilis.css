@@ -1,0 +1,21 @@
+*{box-sizing: border-box;margin: 0;padding: 0;}
+body{font-family: sans-serif}
+
+.container{
+    width: 75rem;
+    margin: 0 auto;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.align-items-center{
+    align-items: center;
+}
+
+.flex-column{
+    flex-direction: column;
+}
+
+
