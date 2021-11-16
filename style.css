@@ -142,12 +142,20 @@
     margin-top: 10px;
     opacity: 0.8;
 }
+.container-footer-info{
+    display: flex;
+}
 .container-footer-info > div > img{
     width: 64px;
 }
 .container-footer-info-1 {
     margin-top: 20px;
     margin-left: 21%;
+    display: flex;
+}
+.container-footer-info-2 {
+    margin-top: 15px;
+    margin-left: 170px;
     display: flex;
 }
 .container-footer-info-1 ul{
@@ -162,4 +170,19 @@
     color: black;
     font-weight: bold;
     font-size: 14px
+}
+.buttons-3{
+    width: 190px;
+    height: 60px;
+    border: 2px solid #C2C2C2;
+    border-radius: 3px;
+    background-color: transparent;
+    transition: 0.1s;
+}
+.buttons-3:hover{
+    box-shadow: 0px 0px 0px 2px #C2C2C2;
+    border: transparent;
+}
+.buttons-3 a{
+    color: black;
 }
