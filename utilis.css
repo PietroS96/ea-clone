@@ -18,4 +18,11 @@ body{font-family: sans-serif}
     flex-direction: column;
 }
 
+.justify-content-between{
+    justify-content: space-between;
+}
+
+
+
+
 
