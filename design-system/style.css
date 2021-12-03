@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: gainsboro;
+    width: 100em;
+    height: 100em;
+}
+
+/* Font Group*/
+.container-font-family{
+    display: flex;
+    justify-content: space-around;
+}
+.container-font-family-header {
+    font-family: sans-serif;
+    font-size: 18px;
+}
+.container-font-family-footer-condizioni {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.container-font-family-libreria-giochi {
+    font-family: Oswald;
+    font-size: 18px;
+}
+.container-font-family-note-legali{
+    font-family: Sen;
+    font-size: 16px;
+}
+/* Palette colori*/
+
+.palette{
+    display: flex;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+.palette > *{
+    padding: 30px;
+}
+.box-1{
+    background-color: #FF4747;
+}
+.box-2{
+    background-color: #161616;
+}
+.box-3{
+    background-color: #6FB0D6;
+}
+.box-4{
+    background-color: #EAEAEA;
+    color: black;
+}
+.box-5{
+    background-color: #F3F3F3;
+    color: black;
+}
+
+/* Vari Bottoni*/
+
+.buttons{
+    width: 160px;
+    height: 60px;
+    background-color:#FF4747;
+    border: 1px solid transparent ;
+    border-radius: 5px;
+    transition: 0.1s;
+    cursor: pointer;
+
+}
+.buttons:hover{
+    box-shadow: 0px 0px 1px 3px #FF4747;
+}
+
+
+.buttons1{
+    width: 160px;
+    height: 60px;
+    border: 2px solid black;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.buttons1:hover{
+    box-shadow: 0px 0px 0px 2px black;
+    border: 0;
+}
+
+.buttons2{
+    width: 160px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: 0.1s;
+    cursor: pointer;
+    color: white;
+}
+.buttons2:hover{
+    box-shadow: 0px 0px 0px 2px white;
+    border: transparent;
+}
+
+/* Card riutilizzabili*/
+
+.ea-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 395.42px;
+    height: 395.42px;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    background-size: cover;
+}
+
+.ea-container > p {
+    color: white;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(49, 39, 83, 0.800) 0%, hsla(358, 78%, 62%, 0.800) 100%);
+    transition: 0.3s;
+}
+
+.ea-container::after {
+    display: flex;
+    content: url(nfshpr-logo-white.png);
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 0.35s;
+    bottom: 0%;
+}
+
+.ea-container:hover {
+    cursor: pointer;
+}
+.ea-container:hover  p {
+    opacity: 1;
+}
+.ea-container:hover::after {
+    bottom: 20%;
+}
+
+.label-ultime-novità{
+    width: 368.28px;
+    height: 483.58px;
+    margin: 0px 0px 16px;
+    padding: 0px 8px;    
+}
+.shadow-label{
+    height: 100%;
+    margin-top: 0px;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    box-shadow: 0px 5px 10px black;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    transition: 0.3s;
+    background-color: white;
+}
+
+.shadow-label:hover{
+    box-shadow: 0px 10px 20px black; 
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+   
+}
+
+.link-label{
+    cursor: pointer;
+    text-decoration: none;
+    color: #161616;
+}
+.imm-label>img{
+    display: block;
+    width: 100%;
+    height: 30%;
+}
+
+.article-label{
+    display: block;
+    width: 100%;
+    height: 70%;
+    padding-left: 20px;
+}
+.info-article{
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+}
+.subject-article{
+    color: #FF4747;
+}
