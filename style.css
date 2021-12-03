@@ -6,7 +6,386 @@
   list-style-type: none;
   font-family: sans-serif;
 }
+/* --Header-- */
+.black-nav {
+  background-color: #161616;
+  height: 40px;
+  justify-content: flex-end;
+  gap: 35px;
+  padding-right: 35px;
+}
+.black-nav > svg {
+  fill: #dcdcdc;
+  height: 18px;
+}
 
+.black-nav > *,
+.white-nav > * {
+  cursor: pointer;
+}
+
+.white-nav {
+  height: 60px;
+}
+
+.circle-menu {
+  gap: 3px;
+  padding: 10px;
+  margin: 0 10px;
+  max-width: 20px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  background-color: #161616;
+  transition: 0.25s;
+}
+
+.circle-menu:hover > .circle {
+  width: 7px;
+  height: 7px;
+  background-color: #ff4747;
+}
+
+.white-nav > .logo {
+  width: 210px;
+  margin: 0 4rem 0 2rem;
+}
+
+.white-nav > ul {
+  list-style: none;
+  font-size: 18px;
+  gap: 35px;
+}
+
+aside > .left-menu {
+  background-color: white;
+  width: 420px;
+  height: 100%;
+  position: absolute;
+  box-shadow: 5px 0px 10px 3px #2c2c2c93;
+  left: -500px;
+  padding: 20px;
+  transition: left ease-in-out 0.5s;
+}
+
+#menu-closer {
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+/* --Header > Article-- */
+article.banner {
+  height: 60vh;
+  background-image: url(./assets/bf-2042-section-bg-homepage-hero-keyart-xl.jpg.adapt.1920w.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+article.banner h1 {
+  font-size: 50px;
+}
+
+article.banner h6 {
+  font-size: 18px;
+  margin: 30px 0;
+  font-weight: 400;
+  width: 50%;
+}
+
+article.banner .btn-default {
+  width: 160px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.5ms;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+}
+
+article.banner .btn-default:hover {
+  box-shadow: 0px 0px 0px 2px white;
+  border: transparent;
+}
+/* Body > card giochi in evidenza */
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.games {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+}
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1203px;
+  max-height: 1046px;
+  justify-content: center;
+}
+
+.ea-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350.28px;
+  height: 350.28px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  margin: 14px;
+}
+
+.ea-container > p {
+  color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 39, 83, 0.8) 0%,
+    hsla(358, 78%, 62%, 0.8) 100%
+  );
+  transition: 0.3s;
+}
+
+.ea-container::after {
+  display: flex;
+  content: "";
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.35s;
+  bottom: 0%;
+}
+
+.ea-container:hover {
+  cursor: pointer;
+}
+.ea-container:hover p {
+  opacity: 1;
+}
+.ea-container:hover::after {
+  bottom: 20%;
+}
+
+.ea-container:nth-child(1) {
+  background-image: url(assets/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(2) {
+  background-image: url(assets/fifa22-key-art.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(3) {
+  background-image: url(assets/f1-2021-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(4) {
+  background-image: url(assets/nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(5) {
+  background-image: url(assets/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(6) {
+  background-image: url(assets/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(1)::after {
+  content: url(assets/logo-battlefield.png);
+}
+
+.ea-container:nth-child(2)::after {
+  content: url(assets/fifa22-mono-logo.png);
+}
+
+.ea-container:nth-child(3)::after {
+  content: url(assets/f1-2021-mono-logo.png);
+}
+.ea-container:nth-child(4)::after {
+  content: url(assets/nfshpr-logo-white.png);
+}
+
+.ea-container:nth-child(5)::after {
+  content: url(assets/apex-legends-mono-logo.png);
+}
+
+.ea-container:nth-child(6)::after {
+  content: url(assets/the-sims-4-mono-logo.png);
+}
+
+.button-ultimi-giochi {
+  width: 160px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.1s;
+  cursor: pointer;
+}
+.buttons1:hover {
+  box-shadow: 0px 0px 0px 2px #161616;
+  margin: 20px 100px 20px 100px;
+  font-size: 18px;
+}
+.button-ultimi-giochi:hover {
+  box-shadow: 0px 0px 0px 2px black;
+  border: 0;
+}
+/* Sezione Ultime Novità */
+.ultime-novita {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.title-section {
+  width: 100%;
+}
+.title-section > h1 {
+  display: block;
+  text-align: center;
+  font-size: 44px;
+  color: #161616;
+}
+/* Barra di navigazione ultime novità */
+.navbar-section {
+  width: 100%;
+  border-bottom: 2px #cdcdcd solid;
+}
+.utlime-novità-bar {
+  width: 100%;
+  padding: 0;
+}
+.utlime-novità-bar > ul {
+  width: 100%;
+  text-align: center;
+}
+
+.utlime-novità-bar > ul > li {
+  display: inline;
+  text-align: left;
+  border-right: 2px #cdcdcd solid;
+}
+
+.link-box {
+  width: 100%;
+  padding: 5px 3px 20px 10px;
+  display: inline;
+  text-align: left;
+}
+.link-box > a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #161616;
+}
+.link-box:hover {
+  background-color: #dedede;
+}
+
+/* AREA ETICHETTE */
+
+.etichette-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Etichette */
+.label-ultime-novità {
+  width: 368.28px;
+  height: 483.58px;
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.shadow-label {
+  height: 100%;
+  margin-top: 0px;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  box-shadow: 0px 5px 10px black;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition: 0.3s;
+  background-color: white;
+}
+
+.shadow-label:hover {
+  box-shadow: 0px 10px 20px black;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.link-label {
+  cursor: pointer;
+  text-decoration: none;
+  color: #161616;
+}
+.imm-label > img {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+.article-label {
+  display: block;
+  width: 100%;
+  height: 70%;
+  padding-left: 20px;
+}
+.info-article {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.subject-article {
+  color: #ff4747;
+}
+
+/* Area bottone più dettagli */
+.conteiner-buttons1 {
+  display: block;
+  margin-top: 2.5%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.buttons1 {
+  width: 160px;
+  height: 60px;
+  border: 2px solid #161616;
+}
 /*Footer*/
 
 .banner-sub {
