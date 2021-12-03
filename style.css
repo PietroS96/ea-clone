@@ -1,3 +1,8 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 /* --Header-- */
 .black-nav {
     background-color: #161616;
@@ -108,7 +113,3 @@ article.banner .btn-default:hover{
     box-shadow: 0px 0px 0px 2px white;
     border: transparent;
 }
-
-
-
-
