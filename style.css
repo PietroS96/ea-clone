@@ -1,3 +1,119 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* --Header-- */
+.black-nav {
+    background-color: #161616;
+    height: 40px;
+    justify-content: flex-end;
+    gap: 35px;
+    padding-right: 35px;
+}
+.black-nav > svg{
+    fill: #dcdcdc;
+    height: 18px;
+}
+
+.black-nav > *, 
+.white-nav > *{
+    cursor: pointer;
+}
+
+.white-nav{
+    height: 60px;
+}
+
+.circle-menu{
+    gap: 3px;
+    padding: 10px;
+    margin: 0 10px;
+    max-width: 20px;
+    cursor: pointer;
+}
+
+.circle{
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: #161616;
+    transition: 0.250s;
+}
+
+.circle-menu:hover > .circle{
+    width: 7px;
+    height: 7px;
+    background-color: #FF4747;
+}
+
+.white-nav > .logo{
+    width: 210px;
+    margin: 0 4rem 0 2rem;
+}
+
+.white-nav > ul{
+    list-style: none;
+    font-size: 18px;
+    gap: 35px;
+}
+
+aside > .left-menu{
+    background-color: white;
+    width: 420px;
+    height: 100%;
+    position: absolute;
+    box-shadow: 5px 0px 10px 3px #2c2c2c93;
+    left: -500px;
+    padding: 20px;
+    transition: left ease-in-out 0.5s;
+}
+
+#menu-closer{
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+
+/* --Header > Article-- */
+article.banner{
+    height: 60vh;
+    background-image: url(/ea-clone/assets/bf-2042-section-bg-homepage-hero-keyart-xl.jpg.adapt.1920w.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+
+article.banner h1{
+    font-size: 50px
+}
+
+article.banner h6{
+    font-size: 18px;
+    margin: 30px 0;
+    font-weight: 400;
+    width: 50%;
+}
+
+article.banner .btn-default{
+    width: 160px;
+    height: 60px;
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: transparent;
+    transition: 0.5ms;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+}
+
+article.banner .btn-default:hover{
+    box-shadow: 0px 0px 0px 2px white;
+    border: transparent;
+}
+/* Body > card giochi in evidenza */
 .big-container {
   display: flex;
   flex-direction: column;
