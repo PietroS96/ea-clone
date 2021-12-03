@@ -6,7 +6,9 @@
   list-style-type: none;
   font-family: sans-serif;
 }
+
 /* --Header-- */
+
 .black-nav {
   background-color: #161616;
   height: 40px;
@@ -538,8 +540,8 @@ article.banner .btn-default:hover {
 
 .panel {
   position: absolute;
-  bottom: -42px;
-  right: 380px;
+  bottom: -2920px;
+  right: 280px;
   width: 560px;
   height: 500px;
   display: none;
