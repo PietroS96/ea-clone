@@ -113,3 +113,144 @@ article.banner .btn-default:hover{
     box-shadow: 0px 0px 0px 2px white;
     border: transparent;
 }
+/* Body > card giochi in evidenza */
+.big-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.games {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 40px;
+  margin: 20px 0px 20px 0px;
+}
+.container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1203px;
+  max-height: 1046px;
+  justify-content: center;
+}
+
+.ea-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350.28px;
+  height: 350.28px;
+  font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  background-size: cover;
+  margin: 14px;
+}
+
+.ea-container > p {
+  color: white;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(49, 39, 83, 0.8) 0%,
+    hsla(358, 78%, 62%, 0.8) 100%
+  );
+  transition: 0.3s;
+}
+
+.ea-container::after {
+  display: flex;
+  content: "";
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: 0.35s;
+  bottom: 0%;
+}
+
+.ea-container:hover {
+  cursor: pointer;
+}
+.ea-container:hover p {
+  opacity: 1;
+}
+.ea-container:hover::after {
+  bottom: 20%;
+}
+
+.ea-container:nth-child(1) {
+  background-image: url(assets/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(2) {
+  background-image: url(assets/fifa22-key-art.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(3) {
+  background-image: url(assets/f1-2021-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(4) {
+  background-image: url(assets/nfshpr-keyart-1x1.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(5) {
+  background-image: url(assets/apex-legends-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(6) {
+  background-image: url(assets/the-sims-4-keyart.jpg.adapt.crop1x1.767p.jpg);
+}
+
+.ea-container:nth-child(1)::after {
+  content: url(assets/logo-battlefield.png);
+}
+
+.ea-container:nth-child(2)::after {
+  content: url(assets/fifa22-mono-logo.png);
+}
+
+.ea-container:nth-child(3)::after {
+  content: url(assets/f1-2021-mono-logo.png);
+}
+.ea-container:nth-child(4)::after {
+  content: url(assets/nfshpr-logo-white.png);
+}
+
+.ea-container:nth-child(5)::after {
+  content: url(assets/apex-legends-mono-logo.png);
+}
+
+.ea-container:nth-child(6)::after {
+  content: url(assets/the-sims-4-mono-logo.png);
+}
+
+.button-ultimi-giochi {
+  width: 160px;
+  height: 60px;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.1s;
+  cursor: pointer;
+  margin: 20px 100px 20px 100px;
+  font-size: 18px;
+}
+.button-ultimi-giochi:hover {
+  box-shadow: 0px 0px 0px 2px black;
+  border: 0;
+}
