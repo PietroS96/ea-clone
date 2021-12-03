@@ -247,10 +247,141 @@ article.banner .btn-default:hover{
   background-color: transparent;
   transition: 0.1s;
   cursor: pointer;
+}
+.buttons1:hover {
+  box-shadow: 0px 0px 0px 2px #161616;
   margin: 20px 100px 20px 100px;
   font-size: 18px;
 }
 .button-ultimi-giochi:hover {
   box-shadow: 0px 0px 0px 2px black;
   border: 0;
+}
+/* Sezione Ultime Novità */
+.ultime-novita {
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.title-section {
+  width: 100%;
+}
+.title-section > h1 {
+  display: block;
+  text-align: center;
+  font-size: 44px;
+  color: #161616;
+}
+/* Barra di navigazione ultime novità */
+.navbar-section {
+  width: 100%;
+  border-bottom: 2px #cdcdcd solid;
+}
+.utlime-novità-bar {
+  width: 100%;
+  padding: 0;
+}
+.utlime-novità-bar > ul {
+  width: 100%;
+  text-align: center;
+}
+
+.utlime-novità-bar > ul > li {
+  display: inline;
+  text-align: left;
+  border-right: 2px #cdcdcd solid;
+}
+
+.link-box {
+  width: 100%;
+  padding: 5px 3px 20px 10px;
+  display: inline;
+  text-align: left;
+}
+.link-box > a {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  color: #161616;
+}
+.link-box:hover {
+  background-color: #dedede;
+}
+
+/* AREA ETICHETTE */
+
+.etichette-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 4%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* Etichette */
+.label-ultime-novità {
+  width: 368.28px;
+  height: 483.58px;
+  margin: 0px 0px 16px;
+  padding: 0px 8px;
+}
+.shadow-label {
+  height: 100%;
+  margin-top: 0px;
+  margin-right: 1%;
+  margin-bottom: 2%;
+  margin-left: 1%;
+  box-shadow: 0px 5px 10px black;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  transition: 0.3s;
+  background-color: white;
+}
+
+.shadow-label:hover {
+  box-shadow: 0px 10px 20px black;
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.link-label {
+  cursor: pointer;
+  text-decoration: none;
+  color: #161616;
+}
+.imm-label > img {
+  display: block;
+  width: 100%;
+  height: 30%;
+}
+
+.article-label {
+  display: block;
+  width: 100%;
+  height: 70%;
+  padding-left: 20px;
+}
+.info-article {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.subject-article {
+  color: #ff4747;
+}
+
+/* Area bottone più dettagli */
+.conteiner-buttons1 {
+  display: block;
+  margin-top: 2.5%;
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.buttons1 {
+  width: 160px;
+  height: 60px;
+  border: 2px solid #161616;
 }
