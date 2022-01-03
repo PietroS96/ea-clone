@@ -53,15 +53,56 @@
     gap: 35px;
 }
 
+.white-nav > ul > li{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.white-nav > ul .arrow > img{
+    width: 20px;
+    margin-top: 5px;
+    transition:  0.5s;
+}
+
+.white-nav > ul > li:hover .arrow > img{
+    transform: rotate(0.5turn);
+}
+
+.white-nav > ul .drop-menu{
+    position: absolute;
+    left: 0;
+    width: max-content;
+    top: calc(100% + .25rem);
+    background-color: white;
+    padding: 0.70rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 5px 0 #333;
+    opacity:0;
+    pointer-events: none;
+    transform:  translateY(-10px);
+    transition: opacity 200ms, transform 200ms;
+}
+
+.white-nav > ul > li:hover > .drop-menu{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+
 aside > .left-menu{
     background-color: white;
-    width: 420px;
+    width: 450px;
     height: 100%;
     position: absolute;
     box-shadow: 5px 0px 10px 3px #2c2c2c93;
     left: -500px;
     padding: 20px;
     transition: left ease-in-out 0.5s;
+    z-index: 1000
 }
 
 #menu-closer{
