@@ -1,248 +1,1240 @@
 <!DOCTYPE html>
 <html lang="it">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="utilis.css">
-        <title>Home Page Electronic Arts - Sito EA ufficiale</title>
-    </head>
-    <body>
-        <header>
-            <div class="black-nav d-flex align-items-center">
-                <img src="/ea-clone/assets/icon-profile.png" width="25" alt="icon-profile">
-                <svg class="ciao" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 17"><path d="M5.193,0C0.538,0,0,2.673,0,4.684a0.978,0.978,0,0,0,1.955,0c0-1.648.225-2.729,3.238-2.729,2.852,0,2.852,1.45,2.852,2.729a1.951,1.951,0,0,1-1.29,1.675l-0.216.083C4.8,7.108,3.809,7.531,3.809,8.472v3.5a0.978,0.978,0,1,0,1.955,0V8.887c0.4-.209,1.152-0.5,1.474-0.62l0.224-.085A3.831,3.831,0,0,0,10,4.684C10,3.526,10,0,5.193,0Z"></path><path d="M5.366,14.943H3.982a1.029,1.029,0,0,0,0,2.057H5.366A1.029,1.029,0,1,0,5.366,14.943Z"></path></svg>
-                <img src="/ea-clone/assets/EA-Logo-nav.png"alt="ea-icon">
-            </div>
-            <aside id='op-1'>
-                <div class="left-menu" id="show-menu">
-                    <div class="left-menu-text  d-flex justify-content-between align-items-center">
-                        <h3>Tutti i giochi</h3>
-                        <h1 id="menu-closer">X</h1>
-                    </div>
-                </div>
-            </aside>
-            <div class="white-nav d-flex align-items-center">
-                <div class="circle-menu d-flex flex-column" id="circle-btn">
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                    <div class="circle"></div>
-                </div>
-                <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2719 600">
-                    <path fill="#FF4747" fill-rule="evenodd" d="M2588.81131,299.210239 C2588.81131,286.286794 2602.60999,279.396587 2617.69758,279.396587 C2643.13527,279.396587 2662.10253,294.042584 2665.54681,316.435758 L2715.55572,316.435758 C2710.81821,270.35319 2671.58185,238.055343 2618.55542,238.055343 C2571.56834,238.055343 2535.35811,262.601707 2535.35811,303.94295 C2535.35811,350.025518 2579.33199,362.083381 2615.97329,371.561723 C2642.2645,378.447623 2664.68897,384.050223 2664.68897,399.55319 C2664.68897,412.041691 2650.45922,420.65445 2630.62981,420.65445 C2603.8989,420.65445 2583.64273,405.582121 2580.6209,383.188947 L2530.6163,383.188947 C2535.35811,429.267209 2575.87908,462 2630.62981,462 C2680.20333,462 2719,435.726778 2719,394.381228 C2719,349.59488 2675.03475,337.537018 2638.38483,328.062982 C2611.66254,321.168469 2588.81131,315.143844 2588.81131,299.210239 Z M2316.43281,242.788054 L2261.68209,242.788054 L2261.68209,457.69362 L2316.43281,457.69362 L2316.43281,343.996587 C2316.43281,314.708899 2342.29726,284.133604 2386.27544,291.023812 L2386.27544,238.916619 C2353.07411,235.036571 2329.36504,253.554003 2316.43281,281.549777 L2316.43281,242.788054 Z M2133.07113,347.441691 L2091.25263,259.587241 L2050.73166,347.441691 L2133.07113,347.441691 Z M2093.408,143.30638 L2248.6033,457.69362 L2185.67079,457.69362 L2155.05591,393.519952 L2029.17795,393.519952 L1999.42953,457.69362 L1938.217,457.69362 L2093.408,143.30638 Z M1793.82011,327.201707 L1849.43298,327.201707 C1839.09151,275.090207 1794.25118,238.481675 1740.79368,238.481675 C1678.71901,238.481675 1628.27902,285.425518 1628.27902,350.456156 C1628.27902,415.056156 1678.71901,462 1740.79368,462 C1794.25118,462 1839.09151,427.114019 1849.43298,375.00252 L1793.82011,375.00252 C1785.19862,398.261276 1764.94245,412.902966 1740.79368,412.902966 C1708.46312,412.902966 1682.59867,387.495327 1682.59867,351.317432 C1682.59867,314.282568 1708.46312,289.30126 1740.79368,289.30126 C1764.94245,289.30126 1785.19862,303.94295 1793.82011,327.201707 Z M1549.27607,457.69362 L1604.01817,457.69362 L1604.01817,242.792361 L1549.27607,242.792361 L1549.27607,457.69362 Z M1541.51242,180.776188 C1541.51242,200.154896 1557.46648,216.088501 1576.43374,216.088501 C1595.83207,216.088501 1611.78182,200.154896 1611.78182,180.776188 C1611.78182,161.39748 1595.83207,145.459569 1576.43374,145.459569 C1557.46648,145.459569 1541.51242,161.39748 1541.51242,180.776188 Z M1374.38499,269.487607 L1374.38499,242.788054 L1319.63427,242.788054 L1319.63427,457.69362 L1374.38499,457.69362 L1374.38499,327.628038 C1374.38499,302.655343 1393.78332,282.841691 1419.22101,282.841691 C1445.51222,282.841691 1464.05272,301.789761 1464.05272,329.781228 L1464.05272,457.69362 L1518.80344,457.69362 L1518.80344,325.474848 C1518.80344,275.090207 1489.91716,238.055343 1438.61934,238.055343 C1411.02629,238.055343 1387.31721,250.108899 1374.38499,269.487607 Z M1181.33707,288.870622 C1148.14436,288.870622 1121.84453,313.847623 1121.84453,350.886794 C1121.84453,387.060383 1148.14436,412.472329 1181.33707,412.472329 C1214.53408,412.472329 1240.8253,387.060383 1240.8253,350.886794 C1240.8253,313.847623 1214.53408,288.870622 1181.33707,288.870622 Z M1181.33707,462 C1118.39162,462 1067.52919,415.056156 1067.52919,350.456156 C1067.52919,285.425518 1118.39162,238.481675 1181.33707,238.481675 C1244.2782,238.481675 1295.14926,285.425518 1295.14926,350.456156 C1295.14926,415.056156 1244.2782,462 1181.33707,462 Z M995.802767,242.788054 L941.047732,242.788054 L941.047732,457.69362 L995.802767,457.69362 L995.802767,343.996587 C995.802767,314.708899 1021.66721,284.133604 1065.64108,291.023812 L1065.64108,238.916619 C1032.44407,235.036571 1008.73499,253.554003 995.802767,281.549777 L995.802767,242.788054 Z M2458.88126,179.914912 L2404.99699,197.140431 L2404.99699,402.137018 C2404.99699,435.29614 2428.2793,457.69362 2467.93381,457.69362 L2521.39562,457.69362 L2521.39562,409.027225 L2483.4611,409.027225 C2466.6449,409.027225 2458.88126,401.275742 2458.88126,387.060383 L2458.88126,289.30126 L2521.39562,289.30126 L2521.39562,242.788054 L2458.88126,242.788054 L2458.88126,179.914912 Z M857.656444,179.914912 L803.772179,197.140431 L803.772179,402.137018 C803.772179,435.29614 827.050182,457.69362 866.70469,457.69362 L920.170813,457.69362 L920.170813,409.027225 L882.231979,409.027225 C865.420089,409.027225 857.656444,401.275742 857.656444,387.060383 L857.656444,289.30126 L920.170813,289.30126 L920.170813,242.788054 L857.656444,242.788054 L857.656444,179.914912 Z M730.601658,327.201707 L786.21022,327.201707 C775.864441,275.090207 731.032732,238.481675 677.575231,238.481675 C615.500558,238.481675 565.060576,285.425518 565.060576,350.456156 C565.060576,415.056156 615.500558,462 677.575231,462 C731.032732,462 775.864441,427.114019 786.21022,375.00252 L730.601658,375.00252 C721.980176,398.261276 701.715382,412.902966 677.575231,412.902966 C645.244672,412.902966 619.380225,387.495327 619.380225,351.317432 C619.380225,314.282568 645.244672,289.30126 677.575231,289.30126 C701.715382,289.30126 721.980176,303.94295 730.601658,327.201707 Z M487.139618,328.924258 C482.397803,303.516619 459.977638,285.856156 434.539954,285.856156 C409.106581,285.856156 387.983949,302.655343 380.655689,328.924258 L487.139618,328.924258 Z M546.201083,368.112313 L380.228926,368.112313 C387.552875,395.24681 411.693026,413.333604 441.006066,413.333604 C457.822267,413.333604 473.336625,406.874035 482.397803,393.519952 L543.179253,393.519952 C526.802748,434.865502 487.997455,462 440.148228,462 C375.478489,462 322.891757,414.625518 322.891757,350.025518 C322.891757,284.99488 372.896355,238.055343 434.539954,238.055343 C487.997455,238.055343 546.627846,277.243397 546.627846,359.930191 C546.627846,362.514019 546.201083,365.102153 546.201083,368.112313 Z M243.897425,457.69362 L298.648149,457.69362 L298.648149,139 L243.897425,156.229825 L243.897425,457.69362 Z M0,156.229825 L219.007206,156.229825 L219.007206,209.198293 L60.358998,209.198293 L60.358998,279.827225 L188.823396,279.827225 L188.823396,331.934418 L60.358998,331.934418 L60.358998,405.582121 L219.007206,405.582121 L219.007206,457.69362 L0,457.69362 L0,156.229825 Z"/>
-                </svg>
-                <ul class="d-flex">
-                    <li>Giochi</li>
-                    <li>Altre esperienze</li>
-                    <li>Informazioni</li>
-                    <li>Impegni</li>
-                    <li>Risorse</li>
-                </ul>
-            </div>
-        </header>
-        <main>
-        <article class="banner d-flex align-items-center">
-            <div class="container">
-                <img src="/ea-clone/assets/bf-2042-adaptive-hero-logo-7x2-xl.png.adapt.crop7x2.1920w.png" alt="it-take-two x eaPlay">
-                <h1>Ora disponibile</h1>
-                <h6>L'accesso anticipato per i membri di EA Play ed EA Play Pro, oltre che per i possessori di Gold Edition e Ultimate Edition, inizia ora!</h6>
-                <button class="btn-default" type="button">Gioca ora</button>
-            </div>
-        </article>
-         <section class="giochi-in-evidenza">
-        <div class="big-container">
-            <h2 class="games">Giochi in evidenza</h2>
-            <div class="container-wrap">
-            
-                <a href="https://www.ea.com/it-it/games/battlefield/battlefield-2042" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>
-                <a href="https://www.ea.com/it-it/games/fifa/fifa-22" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>
-                <a href="https://www.ea.com/it-it/games/f1/f1-2021" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>
-                <a href="https://www.ea.com/it-it/games/need-for-speed/need-for-speed-hot-pursuit-remastered" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>
-                <a href="https://www.ea.com/it-it/games/apex-legends" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>
-                <a href="https://www.ea.com/it-it/games/the-sims/the-sims-4" class="ea-container">
-                    <p>Sito ufficiale</p>
-                </a>      
-                <a href="https://www.ea.com/it-it/games"><button class="button-ultimi-giochi"><span>Ultimi giochi</span></button></a>
-            </div>
-        </div>
-    </section>
-     <section class="ultime-novita">
-        <div class="title-section">
-            <h1>Ultime novità</h1>
-        </div>
-        <div class="navbar-section">
-            <nav class="utlime-novità-bar">
-                <ul>
-                    <li>
-                        <div class="link-box" aria-checked="true">
-                            <a href="">Notizie EA</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">EA Play</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">FIFA</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">Apex Legends</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">Battlefield</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">The Sims 4</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">F1 2021</a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="link-box">
-                            <a href="">Inside EA</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <div class="etichette-section">
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="label-ultime-novità">
-                <div class="shadow-label">
-                    <a class="link-label" href="">
-                        <div class="imm-label">
-                            <img src="assets/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png"
-                                alt="immagine">
-                        </div>
-                        <div class="article-label">
-                            <h3 class="info-article">
-                                <span class="subject-article">Electronic Arts</span>
-                                <span class="date-article">01-gen-2020</span>
-                            </h3>
-                            <h1 class="title-article">Titolo</h1>
-                            <p class="subtitle-article">Sottotitolo</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utilis.css" />
+  <title>Home Page Electronic Arts - Sito EA ufficiale</title>
+</head>
+
+<body>
+  <header>
+    <div class="black-nav d-flex align-items-center">
+      <img src="./assets/icon-profile.png" width="25" alt="icon-profile" />
+      <svg class="ciao" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 17">
+        <path
+          d="M5.193,0C0.538,0,0,2.673,0,4.684a0.978,0.978,0,0,0,1.955,0c0-1.648.225-2.729,3.238-2.729,2.852,0,2.852,1.45,2.852,2.729a1.951,1.951,0,0,1-1.29,1.675l-0.216.083C4.8,7.108,3.809,7.531,3.809,8.472v3.5a0.978,0.978,0,1,0,1.955,0V8.887c0.4-.209,1.152-0.5,1.474-0.62l0.224-.085A3.831,3.831,0,0,0,10,4.684C10,3.526,10,0,5.193,0Z">
+        </path>
+        <path d="M5.366,14.943H3.982a1.029,1.029,0,0,0,0,2.057H5.366A1.029,1.029,0,1,0,5.366,14.943Z"></path>
+      </svg>
+      <img src="./assets/EA-Logo-nav.png" alt="ea-icon" />
+    </div>
+    <aside id="op-1">
+      <div class="left-menu" id="show-menu">
+        <div class="
+              left-menu-text
+              d-flex
+              justify-content-between
+              align-items-center
+            ">
+          <h3>Tutti i giochi</h3>
+          <h1 id="menu-closer">X</h1>
         </div>
-        <div class="conteiner-buttons1">
-            <button class="buttons1"> <span>Più dettagli</span></button>
+      </div>
+    </aside>
+    <div class="white-nav d-flex align-items-center">
+      <div class="circle-menu d-flex flex-column" id="circle-btn">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+      <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2719 600">
+        <path fill="#FF4747" fill-rule="evenodd"
+          d="M2588.81131,299.210239 C2588.81131,286.286794 2602.60999,279.396587 2617.69758,279.396587 C2643.13527,279.396587 2662.10253,294.042584 2665.54681,316.435758 L2715.55572,316.435758 C2710.81821,270.35319 2671.58185,238.055343 2618.55542,238.055343 C2571.56834,238.055343 2535.35811,262.601707 2535.35811,303.94295 C2535.35811,350.025518 2579.33199,362.083381 2615.97329,371.561723 C2642.2645,378.447623 2664.68897,384.050223 2664.68897,399.55319 C2664.68897,412.041691 2650.45922,420.65445 2630.62981,420.65445 C2603.8989,420.65445 2583.64273,405.582121 2580.6209,383.188947 L2530.6163,383.188947 C2535.35811,429.267209 2575.87908,462 2630.62981,462 C2680.20333,462 2719,435.726778 2719,394.381228 C2719,349.59488 2675.03475,337.537018 2638.38483,328.062982 C2611.66254,321.168469 2588.81131,315.143844 2588.81131,299.210239 Z M2316.43281,242.788054 L2261.68209,242.788054 L2261.68209,457.69362 L2316.43281,457.69362 L2316.43281,343.996587 C2316.43281,314.708899 2342.29726,284.133604 2386.27544,291.023812 L2386.27544,238.916619 C2353.07411,235.036571 2329.36504,253.554003 2316.43281,281.549777 L2316.43281,242.788054 Z M2133.07113,347.441691 L2091.25263,259.587241 L2050.73166,347.441691 L2133.07113,347.441691 Z M2093.408,143.30638 L2248.6033,457.69362 L2185.67079,457.69362 L2155.05591,393.519952 L2029.17795,393.519952 L1999.42953,457.69362 L1938.217,457.69362 L2093.408,143.30638 Z M1793.82011,327.201707 L1849.43298,327.201707 C1839.09151,275.090207 1794.25118,238.481675 1740.79368,238.481675 C1678.71901,238.481675 1628.27902,285.425518 1628.27902,350.456156 C1628.27902,415.056156 1678.71901,462 1740.79368,462 C1794.25118,462 1839.09151,427.114019 1849.43298,375.00252 L1793.82011,375.00252 C1785.19862,398.261276 1764.94245,412.902966 1740.79368,412.902966 C1708.46312,412.902966 1682.59867,387.495327 1682.59867,351.317432 C1682.59867,314.282568 1708.46312,289.30126 1740.79368,289.30126 C1764.94245,289.30126 1785.19862,303.94295 1793.82011,327.201707 Z M1549.27607,457.69362 L1604.01817,457.69362 L1604.01817,242.792361 L1549.27607,242.792361 L1549.27607,457.69362 Z M1541.51242,180.776188 C1541.51242,200.154896 1557.46648,216.088501 1576.43374,216.088501 C1595.83207,216.088501 1611.78182,200.154896 1611.78182,180.776188 C1611.78182,161.39748 1595.83207,145.459569 1576.43374,145.459569 C1557.46648,145.459569 1541.51242,161.39748 1541.51242,180.776188 Z M1374.38499,269.487607 L1374.38499,242.788054 L1319.63427,242.788054 L1319.63427,457.69362 L1374.38499,457.69362 L1374.38499,327.628038 C1374.38499,302.655343 1393.78332,282.841691 1419.22101,282.841691 C1445.51222,282.841691 1464.05272,301.789761 1464.05272,329.781228 L1464.05272,457.69362 L1518.80344,457.69362 L1518.80344,325.474848 C1518.80344,275.090207 1489.91716,238.055343 1438.61934,238.055343 C1411.02629,238.055343 1387.31721,250.108899 1374.38499,269.487607 Z M1181.33707,288.870622 C1148.14436,288.870622 1121.84453,313.847623 1121.84453,350.886794 C1121.84453,387.060383 1148.14436,412.472329 1181.33707,412.472329 C1214.53408,412.472329 1240.8253,387.060383 1240.8253,350.886794 C1240.8253,313.847623 1214.53408,288.870622 1181.33707,288.870622 Z M1181.33707,462 C1118.39162,462 1067.52919,415.056156 1067.52919,350.456156 C1067.52919,285.425518 1118.39162,238.481675 1181.33707,238.481675 C1244.2782,238.481675 1295.14926,285.425518 1295.14926,350.456156 C1295.14926,415.056156 1244.2782,462 1181.33707,462 Z M995.802767,242.788054 L941.047732,242.788054 L941.047732,457.69362 L995.802767,457.69362 L995.802767,343.996587 C995.802767,314.708899 1021.66721,284.133604 1065.64108,291.023812 L1065.64108,238.916619 C1032.44407,235.036571 1008.73499,253.554003 995.802767,281.549777 L995.802767,242.788054 Z M2458.88126,179.914912 L2404.99699,197.140431 L2404.99699,402.137018 C2404.99699,435.29614 2428.2793,457.69362 2467.93381,457.69362 L2521.39562,457.69362 L2521.39562,409.027225 L2483.4611,409.027225 C2466.6449,409.027225 2458.88126,401.275742 2458.88126,387.060383 L2458.88126,289.30126 L2521.39562,289.30126 L2521.39562,242.788054 L2458.88126,242.788054 L2458.88126,179.914912 Z M857.656444,179.914912 L803.772179,197.140431 L803.772179,402.137018 C803.772179,435.29614 827.050182,457.69362 866.70469,457.69362 L920.170813,457.69362 L920.170813,409.027225 L882.231979,409.027225 C865.420089,409.027225 857.656444,401.275742 857.656444,387.060383 L857.656444,289.30126 L920.170813,289.30126 L920.170813,242.788054 L857.656444,242.788054 L857.656444,179.914912 Z M730.601658,327.201707 L786.21022,327.201707 C775.864441,275.090207 731.032732,238.481675 677.575231,238.481675 C615.500558,238.481675 565.060576,285.425518 565.060576,350.456156 C565.060576,415.056156 615.500558,462 677.575231,462 C731.032732,462 775.864441,427.114019 786.21022,375.00252 L730.601658,375.00252 C721.980176,398.261276 701.715382,412.902966 677.575231,412.902966 C645.244672,412.902966 619.380225,387.495327 619.380225,351.317432 C619.380225,314.282568 645.244672,289.30126 677.575231,289.30126 C701.715382,289.30126 721.980176,303.94295 730.601658,327.201707 Z M487.139618,328.924258 C482.397803,303.516619 459.977638,285.856156 434.539954,285.856156 C409.106581,285.856156 387.983949,302.655343 380.655689,328.924258 L487.139618,328.924258 Z M546.201083,368.112313 L380.228926,368.112313 C387.552875,395.24681 411.693026,413.333604 441.006066,413.333604 C457.822267,413.333604 473.336625,406.874035 482.397803,393.519952 L543.179253,393.519952 C526.802748,434.865502 487.997455,462 440.148228,462 C375.478489,462 322.891757,414.625518 322.891757,350.025518 C322.891757,284.99488 372.896355,238.055343 434.539954,238.055343 C487.997455,238.055343 546.627846,277.243397 546.627846,359.930191 C546.627846,362.514019 546.201083,365.102153 546.201083,368.112313 Z M243.897425,457.69362 L298.648149,457.69362 L298.648149,139 L243.897425,156.229825 L243.897425,457.69362 Z M0,156.229825 L219.007206,156.229825 L219.007206,209.198293 L60.358998,209.198293 L60.358998,279.827225 L188.823396,279.827225 L188.823396,331.934418 L60.358998,331.934418 L60.358998,405.582121 L219.007206,405.582121 L219.007206,457.69362 L0,457.69362 L0,156.229825 Z" />
+      </svg>
+      <ul class="d-flex">
+        <li>Giochi</li>
+        <li>Altre esperienze</li>
+        <li>Informazioni</li>
+        <li>Impegni</li>
+        <li>Risorse</li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <article class="banner d-flex align-items-center">
+      <div class="container">
+        <img src="./assets/bf-2042-adaptive-hero-logo-7x2-xl.png.adapt.crop7x2.1920w.png" alt="it-take-two x eaPlay" />
+        <h1>Ora disponibile</h1>
+        <h6>
+          L'accesso anticipato per i membri di EA Play ed EA Play Pro, oltre
+          che per i possessori di Gold Edition e Ultimate Edition, inizia ora!
+        </h6>
+        <button class="btn-default" type="button">Gioca ora</button>
+      </div>
+    </article>
+    <section class="giochi-in-evidenza">
+      <div class="big-container">
+        <h2 class="games">Giochi in evidenza</h2>
+        <div class="container-wrap">
+          <a href="https://www.ea.com/it-it/games/battlefield/battlefield-2042" class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games/fifa/fifa-22" class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games/f1/f1-2021" class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games/need-for-speed/need-for-speed-hot-pursuit-remastered"
+            class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games/apex-legends" class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games/the-sims/the-sims-4" class="ea-container">
+            <p>Sito ufficiale</p>
+          </a>
+          <a href="https://www.ea.com/it-it/games">
+            <button class="button-ultimi-giochi">
+              <span>Ultimi giochi</span>
+            </button>
+          </a>
         </div>
+      </div>
     </section>
-      </main>
-    <script src="script.js"></script>
-    </body>
+    <section id="section-ultime-novità">
+      <div id="titolo-ultime-novità">
+        <h1>Ultime novità</h1>
+      </div>
+      <nav id="nav-ultime-novità">
+        <ul>
+          <li class="li-nav-UN atStart" id="button-UN1">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">Notizie EA</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN2">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">EA Play</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN3">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">FIFA</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN4">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">Apex Legends</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN5">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">Battlefield</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN6">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">The Sims 4</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN7">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">F1 2021</a></div>
+          </li>
+          <li class="li-nav-UN" id="button-UN8">
+            <iframe name="btn-UN" style="display: none;"></iframe>
+            <div><a href="#" target="btn-UN">Inside EA</a></div>
+          </li>
+        </ul>
+      </nav>
+      <div class="etichette-section" id="et-section-1">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/sfp-simguru-blogthumbnail.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">9-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Riflettore sui SimGuru: le interviste di FreePlay</h1>
+                <p class="subtitle-article">Rispondiamo alle tue domande mentre festeggiamo il nostro decimo compleanno!
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/tsfp-u79-partyofthedecade-1920x1080.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims™ FreePlay</span>
+                  <span class="date-article">26-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Aggiornamento Festa del decennale</h1>
+                <p class="subtitle-article">Ti invitiamo a festeggiare il Natale e il nostro 10° compleanno con noi!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">16-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Condividi il nostro Rapporto sull'impatto del 2021</h1>
+                <p class="subtitle-article">I nostri impegni e progressi nella diversità, la creazione di community più
+                  sane, la sostenibilità e molto altro.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/featured-image-battlefield-2042-launch-article.jpg.adapt.crop16x9.431p.jpg"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">10-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Briefing Battlefield: preparatevi all'uscita</h1>
+                <p class="subtitle-article">Preparatevi all'uscita di Battlefield 2042.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">27-ott-2021</span>
+                </h3>
+                <h1 class="title-article">Rafforzare il nostro impegno in materia di accessibilità e inclusione</h1>
+                <p class="subtitle-article">Per ispirare il mondo a giocare, dobbiamo creare storie, personaggi,
+                  esperienze e servizi che entrino in risonanza con tutti i giocatori.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">21-ott-2021</span>
+                </h3>
+                <h1 class="title-article">EA e Discond hanno collaborato per attivare la Rich Presence</h1>
+                <p class="subtitle-article">La Rich Presence consente agli amici di sapere a quale gioco stai giocando
+                  nell'app EA.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-2">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">14-mag-2021</span>
+                </h3>
+                <h1 class="title-article">Gioca a Mass Effect Legendary Edition con EA Play*Pro</h1>
+                <p class="subtitle-article">Vivi la saga cinematografica ora rimasterizzata e ottimizzata per il 4K
+                  Ultra HD</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/eaplay-socialpost-spotlight-fifa21-16x9.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">3-mag-2021</span>
+                </h3>
+                <h1 class="title-article">Ottieni di più da FIFA 21 con EA Play-Sito ufficiale EA SPORTS</h1>
+                <p class="subtitle-article">FIFA 21 è ora disponibile in The Play List con EA Play.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">1-apr-2021</span>
+                </h3>
+                <h1 class="title-article">In evidenza su EA Play- Aprile 2021</h1>
+                <p class="subtitle-article">scopri le nuove ricompense e i giochi ora disponibili con il tuo abbonamento
+                  EA Play.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-image-210316-game-pass-article-eaonlycore-16x9.jpg.adapt.crop16x9.431p.jpg"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">18-mag-2021</span>
+                </h3>
+                <h1 class="title-article">EA Play è ora disponibile su Xbox Game Pass per PC tramite l'app EA Desktop
+                </h1>
+                <p class="subtitle-article">EA Desktop, la nostra piattaforma PC di nuova generazione, è in fase di open
+                  beta. Stiamo unendo le nostre forze con Xbox per offrire più giochi agli utenti PC.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">1-mar-2021</span>
+                </h3>
+                <h1 class="title-article">In evidenza su EA Play- Marzo 2021</h1>
+                <p class="subtitle-article">Scopri le nuove ricompense e i giochi ora disponibili con il tuo abbonamento
+                  EA Play o EA Play Pro.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-play-dec-content-drop-featured-image.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Electronic Arts Inc.</span>
+                  <span class="date-article">25-feb-2021</span>
+                </h3>
+                <h1 class="title-article">EA Play- Prossimamente in The Play List- Primavera 2021</h1>
+                <p class="subtitle-article">Scopri tutto sui nuovi giochi in arrivo su EA Play o EA Play Pro.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-3">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/fut22-headliners-squad-16x9.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">31-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Protagonisti FUT 22- FIFA 22 Ultimate Team- EA SPORTS</h1>
+                <p class="subtitle-article">Celebra i giocatori più in forma del momento con i Protagonisti in FIFA 22
+                  Ultimate Team!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/fut22-winterwildcards-16x9-r2.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">17-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Jolly invernali FUT - FIFA 22 Ultimate Team - Sito ufficiale EA SPORTS</h1>
+                <p class="subtitle-article">Presentazione dei Jolly invernali in FIFA 22 Ultmate Team!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/pitch-notes-update-dark.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">14-dic-2021</span>
+                </h3>
+                <h1 class="title-article">FIFA 22| Note degli sviluppatori- Guida delle feste per giocatori nuovi e...
+                </h1>
+                <p class="subtitle-article">Sia che ti appresti a iniziare FIFA 22 durante le feste, sia che desideri
+                  solo rispolverare alcuni concetti, queste Note degli sviluppatori ti guideranno alla scoperta delle
+                  ultime novità dentro e fuori dal gioco.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/f22-fut-article-featured.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">10-dic-2021</span>
+                </h3>
+                <h1 class="title-article">FUT Versus- FIFA 22 Ultmate Team- EA SPORTS</h1>
+                <p class="subtitle-article">Ti diamo il benvenuto a FUT Versus in FIFA 22 Ultimate Team, dove i rivali
+                  in campo si scontreranno in una svida epocale per decidere il migliore.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/fifa22-totgs-team-16x9.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">3-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Squadra della fase a gironi FUT- TOTGS FIFA 22 Ultmate Team- EA SPORTS</h1>
+                <p class="subtitle-article">Scopri chi è entrato nella rosa della Squadra della fase a gironi e le
+                  relative valutazioni in FIFA 22 Ultimate Team</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/bf-16x9.png.adapt.crop16x9.431p.png" alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">FIFA</span>
+                  <span class="date-article">26-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Black Friday- FIFA 22 Ultimate Team- Sito ufficiale EA SPORTS</h1>
+                <p class="subtitle-article">Scopri di più sul Black Friday e sui contenuti disponibili in FIFA 22
+                  Ultmate Team.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-4">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/prime-gaming-loba-blog-thumbnail.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">16-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Ruba la scena con il nuovo bundle di Prime Gaming per Loba</h1>
+                <p class="subtitle-article">Riscatta la skin Oro rosa per Loba e molto altro dal 16 dicembre al 19
+                  gennaio. È gratis con Prime Gaming!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/holiday-2020-gift-guide-16x9-v2.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">6-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Guida ai regali di Apex Legends 2021</h1>
+                <p class="subtitle-article">Cerchi dei regali leggendari per le persone che ami? Dai un'occhiata alla
+                  guida ai regali di Apex Legends!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/apex2-0-playoffs-logo.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">3-dic-2021</span>
+                </h3>
+                <h1 class="title-article">ALGS- Aggiornamento playoff Fase 1</h1>
+                <p class="subtitle-article">In linea con le nuove misure internazionali per contrastare la diffusione
+                  del coronavirus, la competizione passerà al formato online.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/apex-raiders-event-3840x2160-master16x9.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">2-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Conquista il Winter Express nell'evento collezione Predoni</h1>
+                <p class="subtitle-article">Dal 7 al 21 dicembre, gioca in modalità Winter Express, colleziona gli
+                  oggetti cosmetici dell'evento e sblocca il cimelio di Wattson!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/apex-final-preview-1.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">9-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Market lancia la sua nuova linea di abbigliamento su Apex Legends</h1>
+                <p class="subtitle-article">La nuova evoluzione dello streetwear è in arrivo su Apex Arene grazie a
+                  Market</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/prime-gaming-ash-thumbnail-500kb.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Apex Ledends</span>
+                  <span class="date-article">5-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Squarcia lo spazio con questo pacchetto di Ash per Prime Gaming</h1>
+                <p class="subtitle-article">Ottieni la skin Lama del veleno di Ash e molto altro gratis con il tuo
+                  abbonamento Prime Gaming dal 5 al 16 dicembre.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-5">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/bf-2042-featured-image-hotfix-1.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">16-dic-2021</span>
+                </h3>
+                <h1 class="title-article">AGGIORNAMENTO № 3.1 DI BATTLEFIELD 2042</h1>
+                <p class="subtitle-article">Miglioramenti al bilanciamento dei veicoli, modifiche per le armi e
+                  ulteriori correzioni di bug</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/bf-2042-featured-image-patch-notes-3.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">6-dic-2021</span>
+                </h3>
+                <h1 class="title-article">AGGIORNAMENTO № 3 DI BATTLEFIELD 2042</h1>
+                <p class="subtitle-article">Correzione di ulteriori errori, modifiche al bilanciamento e miglioramenti
+                  per l'esperienza di gioco</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/bf-2042-featured-image-patch-notes-2.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">24-nov-2021</span>
+                </h3>
+                <h1 class="title-article">AGGIORNAMENTO № 2 DI BATTLEFIELD 2042</h1>
+                <p class="subtitle-article">Correzione di altri problemi critici e bilanciamento dopo l'uscita
+                  internazionale</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/featrured-future.jpg.adapt.crop16x9.431p.jpg" alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">23-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Briefing su Battlefield: aggiornamento di lancio e il futuro</h1>
+                <p class="subtitle-article">Un aggiornamento sui nostri obiettivi per i prossimi mesi</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/bf-2042-featured-image-patch-notes-1.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">17-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Aggiornamento n°1 di Battlefield 2042</h1>
+                <p class="subtitle-article">Risolvere problemi critici prima dell'uscita internazionale</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/featured-image-battlefield-2042-launch-article.jpg.adapt.crop16x9.431p.jpg"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Battlefield 2042</span>
+                  <span class="date-article">10-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Briefing Battlefield: preparatevi all'uscita</h1>
+                <p class="subtitle-article">Preparatevi all'uscita di Battlefield 2042</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-6">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/esp-012-1.jpg.adapt.crop16x9.431p.jpg" alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">1-dic-2021</span>
+                </h3>
+                <h1 class="title-article">Trovate i tanti voi stessi in The Sims™ con Bretman Rock</h1>
+                <p class="subtitle-article">Trovate voi stessi e siate voi stessi, fino in fondo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ts4-grid-tile-patch-notes-game-update-16x9.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">30-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Aggiornamento: 30/11/2021</h1>
+                <p class="subtitle-article">È il momento più magico... per un aggiornamento del gioco!</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/sims-04-27-insidemaxis-livestream-sims411.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">29-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Riepilogo delle novità di The Sims</h1>
+                <p class="subtitle-article">Dentro Maxis- 23/11/2021</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/neighbourhood-blog-tile.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">23-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Blog delle storie di quartiere di The Sims™ 4</h1>
+                <p class="subtitle-article">Infondere nuova vita nel quartiere</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ts4-sp28-official-screens-02-001-4k.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">17-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Ridefinire i classici londinesi</h1>
+                <p class="subtitle-article">Scopri nuovi stili con The Sims4 Modern Menswear Kit</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/port-of-marriage.png.adapt.crop16x9.431p.png" alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">The Sims4</span>
+                  <span class="date-article">16-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Cose da fare- 16 novembre 2021</h1>
+                <p class="subtitle-article">Cose da fare</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-7">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/pj-f121-abu-hamver-1.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">10-dic-2021</span>
+                </h3>
+                <h1 class="title-article">F1® 2021 - PREVISIONE DEL RISULTATO DELLA GARA FINALE</h1>
+                <p class="subtitle-article">Scopri quale dei due aspiranti al titolo avrà la meglio durante la
+                  simulazione della gara finale a Yas Marina in F1® 2021</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/pj-f121-f2-jed-pia-02.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">6-dic-2021</span>
+                </h3>
+                <h1 class="title-article">F1® 2021 - AGGIORNAMENTO F2™ 2021</h1>
+                <p class="subtitle-article">Prova le squadre, le auto e i piloti della stagione 2021 di F2™ nel nostro
+                  aggiornamento gratuito</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/pj-f121-f2-jed-zho-02.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">6-dic-2021</span>
+                </h3>
+                <h1 class="title-article">F1® 2021 - NOTE SULLA PATCH 1.14</h1>
+                <p class="subtitle-article">Scopri di più sull'ultima patch</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/f1-2021-drivercard-beauty-shot-16x9-october-web-ready.jpg.adapt.crop16x9.431p.jpg"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">6-dic-2021</span>
+                </h3>
+                <h1 class="title-article">F1® 2021 - AGGIORNAMENTO DELLE VALUTAZIONI DEI PILOTI</h1>
+                <p class="subtitle-article">È il momento di aggiornare le valutazioni dei piloti mentre ci avviciniamo
+                  al rush finale del campionato.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/f1-2021-podium-pass-series3-ricciardo-01.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">17-nov-2021</span>
+                </h3>
+                <h1 class="title-article">PASS PODIO SERIE 3: UNA SERIE MOLTO SPECIALE</h1>
+                <p class="subtitle-article">Gareggia con stile con gli oggetti ideati da Daniel Ricciardo e George
+                  Russell.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/pj-f121-jed-lec-2.jpg.adapt.crop16x9.431p.jpg" alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">F1® 2021</span>
+                  <span class="date-article">15-nov-2021</span>
+                </h3>
+                <h1 class="title-article">Gareggia con stile con gli oggetti ideati da Daniel Ricciardo e George
+                  Russell.</h1>
+                <p class="subtitle-article">Scopri di più sull'ultima patch</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="etichette-section" id="et-section-8">
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-able-inclusion-feature-image-16x9.jpg.adapt.crop16x9.431p.jpg" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">2-nov-2021</span>
+                </h3>
+                <h1 class="title-article">ABLE festeggia il mese nazionale di sensibilizzazione dell'occupazione per
+                  disabili</h1>
+                <p class="subtitle-article">É il momento di educare sui problemi di handicap e celebrare i numerosi e
+                  variegati contributi dei lavoratori con disabilità</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-featured-tile-generic-electronic-arts.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">27-ott-2021</span>
+                </h3>
+                <h1 class="title-article">Rafforzare il nostro impegno in materia di accessibilità e inclusione</h1>
+                <p class="subtitle-article">Per ispirare il mondo a giocare, dobbiamo creare storie, personaggi,
+                  esperienze e servizi che entrino in risonanza con tutti i giocatori.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/eacom-juntos-stronger-together-featured-16x9.jpg.adapt.crop16x9.431p.jpg"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">15-ott-2021</span>
+                </h3>
+                <h1 class="title-article">Juntos: Insieme più forti</h1>
+                <p class="subtitle-article">Festeggiamo e supportiamo i dipendenti e i giocatori EA ispanici/latini</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/eappp-featured-image-logo-shapes.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">25-ago-2021</span>
+                </h3>
+                <h1 class="title-article">I nostri brevetti a favore del gioco positivo</h1>
+                <p class="subtitle-article">Annunciamo un nuovo impegno in materia di brevetti, con l'obiettivo di
+                  condividere alcune delle nostre tecnologie più innovative.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/inside-ea-pride-month-2021-featured-image-16x9.png.adapt.crop16x9.431p.png"
+                  alt="immagine" class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">1-giu-2021</span>
+                </h3>
+                <h1 class="title-article">Tutti i giorni con Orgoglio. Ecco come giochiamo.</h1>
+                <p class="subtitle-article">Celebriamo e supportiamo i dipendenti e i giocatori LGBTQIA+ di EA.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="label-ultime-novita">
+          <div class="shadow-label">
+            <a class="link-label" href="">
+              <div class="imm-label">
+                <img src="assetUN/ea-com-accessibility-thumbnail-16x9.png.adapt.crop16x9.431p.png" alt="immagine"
+                  class="show-imm-un" />
+              </div>
+              <div class="article-label">
+                <h3 class="info-article">
+                  <span class="subject-article">Inside EA</span>
+                  <span class="date-article">26-mag-2021</span>
+                </h3>
+                <h1 class="title-article">ABLE - ERG festeggia il mese di sensibilizzazione sulla salute mentale</h1>
+                <p class="subtitle-article">Per tutto maggio, l'ABLE - ERG ha celebrato il Mese della sensibilizzazione
+                  sulla salute mentale promuovendo incontri trasparenti per aumentare la consapevolezza intorno alla
+                  salute mentale.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="conteiner-button-piu-dettagli">
+        <button class="button-piu-dettagli"><span>Più dettagli</span></button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <section class="banner-sub">
+      <div class="container-info-register">
+        <img src="./assets/ea-play-logo-coral-hero-logo-small.svg" alt="" />
+        <p>
+          Non limitarti al gioco. Gioca al massimo. Sblocca ricompense
+          esclusive, contenuti per i soli membri e una libreria dei migliori
+          titoli.
+        </p>
+        <button class="buttons-2"><a href="">Iscrivi subito</a></button>
+      </div>
+    </section>
+    <section class="container-other-info">
+      <h2>Genitori: il controllo dei videogiochi è nelle vostre mani.</h2>
+      <button class="buttons-1"><a href="">Scopri di più</a></button>
+    </section>
+    <section class="container-info-social">
+      <p>
+        *Si applicano condizioni, limitazioni ed esclusioni.
+        <a href="#">Clicca qui per</a>
+        maggiori dettagli.
+      </p>
+      <hr />
+      <div class="container-info-social-link-icon">
+        <div>
+          <ul class="link-utili">
+            <li><a href="#">Rapporto sull'impatto</a></li>
+            <li><a href="#">Dirigenza</a></li>
+            <li><a href="#">Sicurezza e privacy</a></li>
+            <li><a href="#">Attività politiche</a></li>
+            <li><a href="#">Segnala un problema</a></li>
+            <li>
+              <a href="#">
+                Dichiarazione globale sul rispetto dei diritti umani
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="social">
+          <p>Partecipa alla conversazione</p>
+          <div>
+            <a href="#">
+              <img src="./assets/icons8-f-di-facebook.svg" alt="" />
+            </a>
+            <a href="#"><img src="./assets/icons8-twitter.svg" alt="" /></a>
+            <a href="#">
+              <img src="./assets/icons8-riproduci-youtube.svg" alt="" />
+            </a>
+            <a href="#"><img src="./assets/icons8-instagram.svg" alt="" /></a>
+            <a href="#"><img src="./assets/icons8-twitch.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-footer-info">
+      <div class="container-footer-info-1">
+        <img src="./assets/october-ea-ring.png" alt="" />
+        <ul>
+          <li><a href="#">Libreria dei giochi</a></li>
+          <li><a href="#">Registrati</a></li>
+          <li><a href="#">Origin</a></li>
+          <li><a href="#">Informazioni</a></li>
+          <li><a href="#">Accessibilità</a></li>
+          <li><a href="#">Aiuto</a></li>
+        </ul>
+      </div>
+      <div class="container-footer-info-2">
+        <button class="buttons-lingua" onclick="toggleMenu()">
+          <img src="./assets/icon-language/italy.png " width="20px" alt="" />
+          Italia
+        </button>
+        <div class="panel" id="panel-active">
+          <a href="#">
+            <img src="./assets/icon-language/usa.png" alt="" />
+            United States
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/uk.png" alt="" />
+            United Kingdom
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/australia.png" alt="" />
+            Australia
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/france.png" alt="" />
+            France
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/germania.png" alt="" />
+            Deutschland
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/italy.png" alt="" />
+            Italia
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/giappo.png" alt="" />
+            日本
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/polska.png" alt="" />
+            Polska
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/brazil.png" alt="" />
+            Brasil
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/espana.png" alt="" />
+            Espana
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/canada.png" alt="" />
+            Canada(En)
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/canada.png" alt="" />
+            Canada(Fr)
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/danmark.png" alt="" />
+            Danmark
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/suomi.png" alt="" />
+            Suomi
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/mexico.png" alt="" />
+            Mexico
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/norge.png" alt="" />
+            Norge
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/sverige.png" alt="" />
+            Sverige
+          </a>
+          <a href="#">
+            <img src="./assets/icon-language/turkye.png" alt="" />
+            Turkye
+          </a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container-footer-info-3">
+        <ul>
+          <li><a href="#">Note legali</a></li>
+          <li><a href="#">Accordo con l'utente</a></li>
+          <li>
+            <a href="#">
+              Politica sulla privacy e sui cookie (i tuoi diritti sulla
+              privacy)
+            </a>
+          </li>
+          <li><a href="#">Aggiornamenti sui servizi online</a></li>
+          <li><a href="#">Termini di servizio di Youtube</a></li>
+          <li><a href="#">Norme sulla privacy di Google</a></li>
+          <li><a href="#">Cookie Preferenze</a></li>
+        </ul>
+        <p>© 2021 Electronic Arts Inc.</p>
+      </div>
+    </section>
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById("panel-active").classList.toggle("panel-hide");
+    }
+  </script>
+  <script src="script.js"></script>
+  <script src="script2.js"></script>
+</body>
+
 </html>
