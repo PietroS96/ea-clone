@@ -165,11 +165,7 @@ article.banner .btn-default:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(
-    90deg,
-    rgba(49, 39, 83, 0.8) 0%,
-    hsla(358, 78%, 62%, 0.8) 100%
-  );
+  background: linear-gradient(90deg, rgba(49, 39, 83, 0.8) 0%, hsla(358, 78%, 62%, 0.8) 100%);
   transition: 0.3s;
 }
 
@@ -261,81 +257,131 @@ article.banner .btn-default:hover {
   border: 0;
 }
 /* Sezione Ultime Novità */
-.ultime-novita {
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 18px;
-}
 
-.title-section {
+#section-ultime-novità {
   width: 100%;
+  font-size: 18px;
+  margin-top: 5%;
 }
-.title-section > h1 {
+#titolo-ultime-novità {
+  width: 100%;
+  padding-bottom: 1%;
+}
+#titolo-ultime-novità > h1 {
   display: block;
   text-align: center;
   font-size: 44px;
   color: #161616;
 }
-/* Barra di navigazione ultime novità */
-.navbar-section {
+
+#nav-ultime-novità {
+  width: 100%;
+  display: flex;
+}
+
+#nav-ultime-novità > ul {
   width: 100%;
   border-bottom: 2px #cdcdcd solid;
-}
-.utlime-novità-bar {
-  width: 100%;
-  padding: 0;
-}
-.utlime-novità-bar > ul {
-  width: 100%;
-  text-align: center;
+  padding-left: 22%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
 
-.utlime-novità-bar > ul > li {
-  display: inline;
-  text-align: left;
-  border-right: 2px #cdcdcd solid;
-}
-
-.link-box {
-  width: 100%;
-  padding: 5px 3px 20px 10px;
-  display: inline;
-  text-align: left;
-}
-.link-box > a {
-  display: inline-block;
+/* STILE INIZIALE */
+.li-nav-UN {
   cursor: pointer;
-  text-decoration: none;
-  color: #161616;
+  border: transparent;
+  padding: 18px 0px;
 }
-.link-box:hover {
+#nav-ultime-novità > ul > li:hover {
   background-color: #dedede;
 }
 
-/* AREA ETICHETTE */
+nav > ul > li > div {
+  display: block;
+  border-right: solid 2px #cdcdcd;
+}
 
+#button-UN8 > div {
+  border-right: none;
+}
+
+#nav-ultime-novità > ul > li > div > a {
+  color: #161616;
+  margin: 14px;
+  padding-bottom: 18px;
+  white-space: nowrap;
+}
+
+/* STILE CLICCATO */
+.liBG {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #dedede;
+}
+
+.liBG > div > a {
+  border-bottom: solid 2.5px #ff4747;
+}
+
+/* Stile iniziale della prima voce del menu ultime novità */
+.atStart {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: #dedede;
+}
+.atStart > div > a {
+  border-bottom: solid 2.5px #ff4747;
+}
+
+/* AREA ETICHETTE */
 .etichette-section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin-top: 4%;
+  margin-top: 3%;
   margin-left: 20%;
-  margin-right: 20%;
+  margin-right: 19%;
+}
+
+/* AREA NASCOSTA */
+#et-section-2 {
+  display: none;
+}
+#et-section-3 {
+  display: none;
+}
+#et-section-4 {
+  display: none;
+}
+#et-section-5 {
+  display: none;
+}
+#et-section-6 {
+  display: none;
+}
+#et-section-7 {
+  display: none;
+}
+#et-section-8 {
+  display: none;
 }
 
 /* Etichette */
-.label-ultime-novità {
-  width: 368.28px;
-  height: 483.58px;
-  margin: 0px 0px 16px;
-  padding: 0px 8px;
+.label-ultime-novita {
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
+  min-width: 300px;
 }
+
 .shadow-label {
   height: 100%;
   margin-top: 0px;
-  margin-right: 1%;
+  margin-right: 5.2%;
   margin-bottom: 2%;
-  margin-left: 1%;
+  margin-left: 1.2%;
   box-shadow: 0px 5px 10px black;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -354,40 +400,133 @@ article.banner .btn-default:hover {
   text-decoration: none;
   color: #161616;
 }
-.imm-label > img {
+
+.show-imm-un {
   display: block;
   width: 100%;
-  height: 30%;
 }
 
 .article-label {
   display: block;
-  width: 100%;
-  height: 70%;
   padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
 }
+
 .info-article {
   display: flex;
   justify-content: flex-start;
-  gap: 30px;
+  padding-top: 20px;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.title-article {
+  font-size: 24px;
+  padding-top: 15px;
+}
+.subtitle-article {
+  padding-top: 10px;
+  font-size: 18px;
+  margin-right: 20px;
 }
 .subject-article {
   color: #ff4747;
 }
 
 /* Area bottone più dettagli */
-.conteiner-buttons1 {
+.conteiner-button-piu-dettagli {
   display: block;
   margin-top: 2.5%;
-  margin-left: 50%;
-  margin-right: 50%;
+  margin-left: 46%;
+  padding-bottom: 3%;
 }
 
-.buttons1 {
+.button-piu-dettagli {
   width: 160px;
   height: 60px;
-  border: 2px solid #161616;
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: transparent;
+  transition: 0.1s;
+  cursor: pointer;
 }
+
+.button-piu-dettagli:hover {
+  box-shadow: 0px 0px 0px 2px black;
+  border: 0;
+}
+
+/* @media sezione ultime novità */
+
+@media all and (max-width: 769px) {
+  .etichette-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 3%;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+
+  .show-imm-un {
+    display: none;
+  }
+
+  .label-ultime-novita {
+    width: 100%;
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+  .info-article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 24px;
+    font-size: 13px;
+  }
+
+  .date-article {
+    margin-top: -8px;
+  }
+
+  .title-article {
+    font-size: 20px;
+    padding-top: 15px;
+  }
+
+  .subtitle-article {
+    display: none;
+  }
+
+  #nav-ultime-novità > ul {
+    padding-left: 5%;
+  }
+}
+
+@media all and (min-width: 770px) and (max-width: 1024px) {
+  .etichette-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 8%;
+    margin-right: 8%;
+  }
+}
+
+@media all and (min-width: 1025px) and (max-width: 1430px) {
+  .etichette-section {
+    margin-left: 8%;
+    margin-right: 7%;
+  }
+}
+
+@media all and (min-width: 1431px) and (max-width: 1680px) {
+  .etichette-section {
+    margin-left: 17%;
+    margin-right: 16%;
+  }
+}
+
 /*Footer*/
 
 .banner-sub {
@@ -540,7 +679,7 @@ article.banner .btn-default:hover {
 
 .panel {
   position: absolute;
-  bottom: -2920px;
+  bottom: -3035px;
   right: 280px;
   width: 560px;
   height: 500px;
