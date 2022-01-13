@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="utilis.css" />
     <title>Home Page Electronic Arts - Sito EA ufficiale</title>
@@ -1027,28 +1033,24 @@
       </section>
     </main>
     <footer>
-      <section class="banner-sub">
-        <div class="container-info-register">
+      <div class="container-fluid banner-sub">
+        <div class="container-fluid container-info-register">
           <img src="./assets/ea-play-logo-coral-hero-logo-small.svg" alt="" />
           <p>
-            Non limitarti al gioco. Gioca al massimo. Sblocca ricompense esclusive, contenuti per i soli membri e una libreria dei migliori titoli.
+            Non limitarti al gioco. Gioca al massimo. Sblocca ricompense
+            <br>
+            esclusive, contenuti per i soli membri e una libreria dei migliori <br> titoli.
           </p>
           <button class="buttons-2"><a href="">Iscrivi subito</a></button>
         </div>
-      </section>
+      </div>
       <section class="container-other-info">
         <h2>Genitori: il controllo dei videogiochi è nelle vostre mani.</h2>
         <button class="buttons-1"><a href="">Scopri di più</a></button>
       </section>
-      <section class="container-info-social">
-        <p>
-          *Si applicano condizioni, limitazioni ed esclusioni.
-          <a href="#">Clicca qui per</a>
-          maggiori dettagli.
-        </p>
-        <hr />
+      <div class="container-fluid container-info-social">
         <div class="container-info-social-link-icon">
-          <div>
+          <div class="container-fluid">
             <ul class="link-utili">
               <li><a href="#">Rapporto sull'impatto</a></li>
               <li><a href="#">Dirigenza</a></li>
@@ -1075,11 +1077,13 @@
             </div>
           </div>
         </div>
-      </section>
-      <section class="container-footer-info">
+      </div>
+      <div class="container container-footer-info">
         <div class="container-footer-info-1">
-          <img src="./assets/october-ea-ring.png" alt="" />
           <ul>
+            <li> 
+              <img src="./assets/october-ea-ring.png" alt="" />
+            </li>
             <li><a href="#">Libreria dei giochi</a></li>
             <li><a href="#">Registrati</a></li>
             <li><a href="#">Origin</a></li>
@@ -1087,89 +1091,88 @@
             <li><a href="#">Accessibilità</a></li>
             <li><a href="#">Aiuto</a></li>
           </ul>
-        </div>
-        <div class="container-footer-info-2">
-          <button class="buttons-lingua" onclick="toggleMenu()">
-            <img src="./assets/icon-language/italy.png " width="20px" alt="" />
-            Italia
-          </button>
-          <div class="panel" id="panel-active">
-            <a href="#">
-              <img src="./assets/icon-language/usa.png" alt="" />
-              United States
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/uk.png" alt="" />
-              United Kingdom
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/australia.png" alt="" />
-              Australia
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/france.png" alt="" />
-              France
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/germania.png" alt="" />
-              Deutschland
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/italy.png" alt="" />
+          <div class="container-footer-info-2">
+            <button class="buttons-lingua" onclick="toggleMenu()">
+              <img src="./assets/icon-language/italy.png " width="20px" alt="" />
               Italia
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/giappo.png" alt="" />
-              日本
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/polska.png" alt="" />
-              Polska
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/brazil.png" alt="" />
-              Brasil
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/espana.png" alt="" />
-              Espana
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/canada.png" alt="" />
-              Canada(En)
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/canada.png" alt="" />
-              Canada(Fr)
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/danmark.png" alt="" />
-              Danmark
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/suomi.png" alt="" />
-              Suomi
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/mexico.png" alt="" />
-              Mexico
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/norge.png" alt="" />
-              Norge
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/sverige.png" alt="" />
-              Sverige
-            </a>
-            <a href="#">
-              <img src="./assets/icon-language/turkye.png" alt="" />
-              Turkye
-            </a>
+            </button>
+            <div class="panel" id="panel-active">
+              <a href="#">
+                <img src="./assets/icon-language/usa.png" alt="" />
+                United States
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/uk.png" alt="" />
+                United Kingdom
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/australia.png" alt="" />
+                Australia
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/france.png" alt="" />
+                France
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/germania.png" alt="" />
+                Deutschland
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/italy.png" alt="" />
+                Italia
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/giappo.png" alt="" />
+                日本
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/polska.png" alt="" />
+                Polska
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/brazil.png" alt="" />
+                Brasil
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/espana.png" alt="" />
+                Espana
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/canada.png" alt="" />
+                Canada(En)
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/canada.png" alt="" />
+                Canada(Fr)
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/danmark.png" alt="" />
+                Danmark
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/suomi.png" alt="" />
+                Suomi
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/mexico.png" alt="" />
+                Mexico
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/norge.png" alt="" />
+                Norge
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/sverige.png" alt="" />
+                Sverige
+              </a>
+              <a href="#">
+                <img src="./assets/icon-language/turkye.png" alt="" />
+                Turkye
+              </a>
+            </div>
           </div>
         </div>
-      </section>
-      <section>
+      </div>
         <div class="container-footer-info-3">
           <ul>
             <li><a href="#">Note legali</a></li>
@@ -1184,13 +1187,17 @@
           </ul>
           <p>© 2021 Electronic Arts Inc.</p>
         </div>
-      </section>
     </footer>
     <script>
       function toggleMenu() {
         document.getElementById("panel-active").classList.toggle("panel-hide");
       }
     </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
     <script src="script2.js"></script>
   </body>
