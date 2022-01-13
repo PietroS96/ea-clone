@@ -1,7 +1,7 @@
 *{box-sizing: border-box;margin: 0;padding: 0;}
 body{font-family: sans-serif}
 
-.container{
+.container-custom{
     width: 70rem;
     margin: 0 auto;
 }
