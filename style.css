@@ -144,7 +144,7 @@ article.banner .btn-default:hover {
   display: flex;
   flex-wrap: wrap;
   max-width: 1203px;
-  max-height: 1046px;
+  max-height: 3046px;
   justify-content: center;
 }
 
@@ -161,18 +161,22 @@ article.banner .btn-default:hover {
   position: relative;
   background-size: cover;
   margin: 14px;
+  overflow-y: hidden;
+  text-decoration: none;
 }
 
 .ea-container > p {
-  color: white;
-  opacity: 0;
+  color: transparent;
+  opacity: 1;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, rgba(49, 39, 83, 0.8) 0%, hsla(358, 78%, 62%, 0.8) 100%);
   transition: 0.3s;
+  background: #00000044;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 17px;
 }
 
 .ea-container::after {
@@ -190,8 +194,10 @@ article.banner .btn-default:hover {
 .ea-container:hover {
   cursor: pointer;
 }
-.ea-container:hover p {
+.ea-container:hover  p {
+  color: white;
   opacity: 1;
+  background: linear-gradient(90deg, rgba(49, 39, 83, 0.800) 0%, hsla(358, 78%, 62%, 0.800) 100%);
 }
 .ea-container:hover::after {
   bottom: 20%;
@@ -252,6 +258,8 @@ article.banner .btn-default:hover {
   background-color: transparent;
   transition: 0.1s;
   cursor: pointer;
+  margin: 20px 100px 20px 100px;
+  font-size: 18px;
 }
 .buttons1:hover {
   box-shadow: 0px 0px 0px 2px #161616;
@@ -261,6 +269,33 @@ article.banner .btn-default:hover {
 .button-ultimi-giochi:hover {
   box-shadow: 0px 0px 0px 2px black;
   border: 0;
+}
+@media screen and (max-width: 1024px) {
+  .ea-container{
+      width: 400px;
+      height: 400px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ea-container{
+      width: 350px;
+      height: 350px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .ea-container{
+      width: 330px;
+      height: 330px;
+  }
+}
+@media screen and (max-width: 733px) {
+  .ea-container{
+      width: 500px;
+      height: 500px;
+  }
+  .container-wrap{
+    margin-bottom: 250px;
+  }
 }
 /* Sezione Ultime Novità */
 
