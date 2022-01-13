@@ -187,3 +187,55 @@ article.banner .btn-default:hover{
     box-shadow: 0px 0px 0px 2px white;
     border: transparent;
 }
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+    article.banner{
+        background-image: url(/ea-clone/assets/bf-2042-section-bg-homepage-hero-keyart-xl.jpg.adapt\ 2.png);
+    }
+    div.circle-menu{
+        display: none;
+    }
+
+    ul.list-item-menu{
+        display: none;
+    }
+
+    article.banner > .container {
+        width: 100%;
+        margin-left: 5rem;
+    }
+    
+    article.banner > .container > img{
+        width: 400px;
+    }
+
+    article.banner h6{
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 720px) {
+    article.banner{
+        background-image: url(/ea-clone/assets/battlefield-2042-key-art.jpg.adapt.crop1x1.767p.jpg);
+    }
+
+    article.banner {
+        text-align: center;
+    }
+
+    article.banner .banner-text{
+        display: none;
+    }
+
+    article.banner > .container {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+}
