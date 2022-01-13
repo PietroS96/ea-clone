@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
 }
+
 /* --Header-- */
 .black-nav {
     background-color: #161616;
@@ -100,20 +101,53 @@
 aside > .left-menu{
     background-color: white;
     width: 450px;
-    height: 100%;
+    height: max-content;
     position: absolute;
     box-shadow: 5px 0px 10px 3px #2c2c2c93;
     left: -500px;
-    padding: 20px;
-    transition: left ease-in-out 0.5s;
-    z-index: 1000
+    transition: position ease-in-out 0.8s;
+    z-index: 1000;
+}
+
+aside > .left-menu > div.left-menu-text{
+    width: 80%;
+    margin: 40px auto;
+}
+
+aside > .left-menu > div > * {
+    color: #333333b0;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+aside > .left-menu > div > *:hover{
+    color: red;
 }
 
 #menu-closer{
-    cursor: pointer;
     font-weight: lighter;
 }
 
+.first-card-aside{
+    width: 80%;
+    height: 300px;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+.aside-card-1{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.aside-card{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+
+}
 
 /* --Header > Article-- */
 article.banner{
