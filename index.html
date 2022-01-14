@@ -1122,9 +1122,14 @@
             <li><a href="#">Aiuto</a></li>
           </ul>
           <div class="container-footer-info-2">
-            <button class="buttons-lingua" onclick="toggleMenu()">
-              <img src="./assets/icon-language/italy.png " width="20px" alt="" />
-              Italia
+            <button class="buttons-lingua" id="buttons-language" onclick="toggleMenu()">
+              <span class="image-buttons-lingua" >
+                <img src="./assets/icon-language/italy.png " width="20px" alt="" />
+                Italia
+              </span>
+              <span>
+                <img src="./assets/icons8-freccia-espandi-30.png" alt="" width="20px">
+              </span>
               <span>
                 <div class="panel" id="panel-active">
                 <a href="#">
@@ -1199,9 +1204,33 @@
                   <img src="./assets/icon-language/turkye.png" alt="" />
                   Turkye
                 </a>
-              </div></span>
+                </div>
+                <div class="panel-selector panel-selector-1" id="panel-hide-2" >
+                  <select class="option-language" name="language" id="language" size="17">
+                    <option value="">United States</option>
+                    <option value="">United Kingdom</option>
+                    <option value="">Australia</option>
+                    <option value="">France</option>
+                    <option value="">Deutschland</option>
+                    <option value="">Cina</option>
+                    <option value="">Polska</option>
+                    <option value="">Brasil</option>
+                    <option value="">Espana</option>
+                    <option value="">Russia</option>
+                    <option value="">Ceska Republika</option>
+                    <option value="">Canada(En)</option>
+                    <option value="">Canada(Fr)</option>
+                    <option value="">Danmark</option>
+                    <option value="">Suomi</option>
+                    <option value="">Mexico</option>
+                    <option value="">Nederland</option>
+                    <option value="">Norge</option>
+                    <option value="">Sverige</option>
+                    <option value="">Turkye</option>
+                  </select>
+                </div>
+              </span>
             </button>
-            
           </div>
         </div>
       </div>
@@ -1221,9 +1250,7 @@
         </div>
     </footer>
     <script>
-      function toggleMenu() {
-        document.getElementById("panel-active").classList.toggle("panel-hide");
-      }
+
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
